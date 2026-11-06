@@ -6,8 +6,7 @@ cask "potato-browser" do
   sha256 arm:   "e071d66eca6c8959d35faee0ae9dc8402bc32ad0302cb9961960a05e74c389ee",
          intel: "ed2706f63928d9be11b5fe8ccea67a0b641ed2cedde0627c8a4ab8a1c4a5d1db"
 
-  url "https://github.com/potatobrowser/potato-browser/releases/download/v#{version}/Potato-Browser-#{version}-#{arch}.dmg",
-      verified: "github.com/potatobrowser/potato-browser/"
+  url "https://github.com/potatobrowser/potato-browser/releases/download/v#{version}/Potato-Browser-#{version}-#{arch}.dmg"
   name "Potato Browser"
   desc "Chromium-based browser that hides the AI features of websites"
   homepage "https://potatobrowser.com/"
