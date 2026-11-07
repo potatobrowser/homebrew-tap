@@ -2,13 +2,13 @@
 cask "potato-browser" do
   arch arm: "arm64", intel: "x64"
 
-  version "0.4.2"
-  sha256 arm:   "447a9c7087dcb1f2669f025131ccedd4e864a5c4a0919d7f183cc923321d3899",
-         intel: "12cf86068368f1ecccda3282a26b060516604572c63d9e499eda079570940aac"
+  version "0.5.0"
+  sha256 arm:   "26964711ebb2077eb39ab4245d7920f44ad8eb90907c165860dfb13fd4f4f398",
+         intel: "d5076253cdbccaed2121e3ab60292e1095aad85de0c136fe005004c7956527ef"
 
   url "https://github.com/potatobrowser/potato-browser/releases/download/v#{version}/Potato-Browser-#{version}-#{arch}.dmg"
   name "Potato Browser"
-  desc "Chromium-based browser that hides the AI features of websites"
+  desc "Chromium-based browser that hides AI features of websites and blocks ads"
   homepage "https://potatobrowser.com/"
 
   livecheck do
