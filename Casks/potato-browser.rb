@@ -2,9 +2,9 @@
 cask "potato-browser" do
   arch arm: "arm64", intel: "x64"
 
-  version "0.6.0"
-  sha256 arm:   "78a261ba71f6bfde15c57c80f067bc18a04498ece22de3ab365bd572335b5047",
-         intel: "f7f90c9fe3ae11c9e28ddef62ebf13ffff99035dcaa196bcbcaafe4ef49da97e"
+  version "0.7.0"
+  sha256 arm:   "ff1534adf585d9ca56284266c65b0bc2a270aae438a5484b3e8d0810ba87df67",
+         intel: "b67faf891f03725d390d5a2afc67185f928e04272908a220722ff9eebed6721d"
 
   url "https://github.com/potatobrowser/potato-browser/releases/download/v#{version}/Potato-Browser-#{version}-#{arch}.dmg"
   name "Potato Browser"
@@ -16,13 +16,16 @@ cask "potato-browser" do
     strategy :github_latest
   end
 
+  auto_updates true
   depends_on macos: :ventura
 
   app "Potato Browser.app"
 
   zap trash: [
     "~/Library/Application Support/Potato Browser",
+    "~/Library/Caches/@potatobrowser-updater",
     "~/Library/Caches/com.potatobrowser.app",
+    "~/Library/Caches/com.potatobrowser.app.ShipIt",
     "~/Library/Caches/Potato Browser",
     "~/Library/HTTPStorages/com.potatobrowser.app",
     "~/Library/Logs/Potato Browser",
