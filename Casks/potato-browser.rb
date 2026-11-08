@@ -2,9 +2,9 @@
 cask "potato-browser" do
   arch arm: "arm64", intel: "x64"
 
-  version "0.7.0"
-  sha256 arm:   "ff1534adf585d9ca56284266c65b0bc2a270aae438a5484b3e8d0810ba87df67",
-         intel: "b67faf891f03725d390d5a2afc67185f928e04272908a220722ff9eebed6721d"
+  version "0.7.1"
+  sha256 arm:   "dde0ddc43c2c7cb7004d8f165e80360c71a4a577f537a3712e7533efa883e207",
+         intel: "e863fb9bf8a0de68a456237a3a901cae9ece2ba7b6810369a3c1ff99d646549d"
 
   url "https://github.com/potatobrowser/potato-browser/releases/download/v#{version}/Potato-Browser-#{version}-#{arch}.dmg"
   name "Potato Browser"
